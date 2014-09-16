@@ -4,11 +4,8 @@
 # By Tom Bridge, Technolutionary LLC
 # edited by Kevin Leicht - wycomco GmbH 2014
 
-#<<<<<<< HEAD
-# Version: 0.4.3
-#=======
 # Version: 0.6 - Munki 2 Edition and wycomco. way
-#>>>>>>> 752fe55da6d3fd6523e5fec1bce1c15527140cfa
+
 
 # This software carries no guarantees, warranties or other assurances that it works. It may wreck your entire environment. That would be bad, mmkay. Backup, test in a VM, and bug report. 
 
@@ -235,8 +232,8 @@ echo "AutoPKG Installed!"
 
 ${DEFAULTS} write com.github.autopkg MUNKI_REPO $REPODIR
 
-autopkg repo-add https://github.com/wycomco/autopkg-recipes.git
-autopkg repo-add https://github.com/autopkg/recipes.git
+autopkg repo-add http://github.com/vollerempfang/wyBox-recipes.git
+autopkg repo-add http://github.com/autopkg/recipes.git
 
 ${DEFAULTS} write com.googlecode.munki.munkiimport editor ${TEXTEDITOR}
 ${DEFAULTS} write com.googlecode.munki.munkiimport repo_path ${REPODIR}
